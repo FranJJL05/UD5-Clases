@@ -46,5 +46,36 @@ public class Fraccion{
         return fraccion3;
     }
 
+    //Simplificar dos fracciones
+    public void simplificar (){
+        //encontrar mayor y menor (divisor y dividendo)
+        int dividendo;
+        int divisor;
+        int maxDivisor;
+        int resto;
+        if (numerador>denominador) {
+            dividendo = numerador;
+            divisor = denominador;
+        } else {
+            dividendo = denominador;
+            divisor = numerador;
+        }
+        if (dividendo%divisor ==0) {
+            maxDivisor = divisor;
+        } else {
+            while (divisor != 0) {
+                resto = dividendo % divisor;
+                dividendo = divisor;
+                divisor = resto;
+            }
+            maxDivisor = dividendo;
+        }
+        System.out.println("\nEl máximo divisor común es " + maxDivisor);
+        //simplificar
+        int newNumerador = numerador / maxDivisor;
+        int newDenominador = denominador / maxDivisor;
+        System.out.printf("La fracción simplificada es %d/%d", newNumerador, newDenominador );
+        System.out.println();
+}
 
 }
