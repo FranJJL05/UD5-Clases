@@ -11,6 +11,8 @@ public class Main {
         System.out.printf("La fracción 1 es %d/%d\n", fraccion1.getNumerador(),
                 fraccion1.getDenominador());
 
+        System.out.printf("La fracción 2 es %d/%d\n", fraccion2.getNumerador(), fraccion2.getDenominador());
+
         // resultado = resultado.multiplicaFraccion(fraccion1, fraccion2); // usando no
         // static, sería método de objeto
 
@@ -21,9 +23,9 @@ public class Main {
         System.out.printf("La multiplación de fraccion1 y fraccion2 es %d/%d", fraccion3.getNumerador(),
                 fraccion3.getDenominador());
 
+        //Simplificar 
+        fraccion3.simplificar();
 
-
-        
     }
 
 }
