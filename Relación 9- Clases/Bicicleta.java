@@ -6,8 +6,7 @@ class Bicicleta{
     int marcha = 2;
 
     //Metodos
-    
-
-
-
+    asd
+    asdasd
+    asdasd
 }
